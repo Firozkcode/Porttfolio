@@ -183,6 +183,92 @@ document.getElementById("colorPicker").addEventListener('input', function(event)
 });
 
 
+
+// ============== pagination and search ====================
+
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.querySelector(".search-container input");
+  const flipCards = Array.from(document.querySelectorAll(".flip-card"));
+  const portfolioContainer = document.querySelector(".portfolio-container");
+  const paginationContainer = document.createElement("div");
+  paginationContainer.classList.add("pagination");
+  document.querySelector(".portfolio").appendChild(paginationContainer);
+
+  let currentPage = 1;
+  let cardsPerPage = 6;
+  let filteredCards = [...flipCards]; // Stores filtered cards
+
+  function showPage(page) {
+      const startIndex = (page - 1) * cardsPerPage;
+      const endIndex = startIndex + cardsPerPage;
+
+      portfolioContainer.innerHTML = ""; // Clear existing cards
+
+      if (filteredCards.length === 0) {
+          portfolioContainer.innerHTML = "<h2 class='not_found'>No Match Found.</h2>";
+          paginationContainer.innerHTML = ""; // Hide pagination when no results
+          return;
+      }
+
+      filteredCards.slice(startIndex, endIndex).forEach(card => portfolioContainer.appendChild(card));
+      updatePagination();
+  }
+
+  function updatePagination() {
+      paginationContainer.innerHTML = "";
+      let totalPages = Math.ceil(filteredCards.length / cardsPerPage);
+
+      if (totalPages > 1) {
+          let prevBtn = document.createElement("button");
+          prevBtn.innerText = "« Prev";
+          prevBtn.disabled = currentPage === 1;
+          prevBtn.onclick = () => { currentPage--; showPage(currentPage); };
+          paginationContainer.appendChild(prevBtn);
+
+          if (currentPage > 3) {
+              paginationContainer.appendChild(document.createTextNode("... "));
+          }
+
+          for (let i = Math.max(1, currentPage - 1); i <= Math.min(totalPages, currentPage + 1); i++) {
+              let pageBtn = document.createElement("button");
+              pageBtn.innerText = i;
+              pageBtn.classList.toggle("active", i === currentPage);
+              pageBtn.onclick = () => { currentPage = i; showPage(currentPage); };
+              paginationContainer.appendChild(pageBtn);
+          }
+
+          if (currentPage < totalPages - 2) {
+              paginationContainer.appendChild(document.createTextNode(" ..."));
+          }
+
+          let nextBtn = document.createElement("button");
+          nextBtn.innerText = "Next »";
+          nextBtn.disabled = currentPage === totalPages;
+          nextBtn.onclick = () => { currentPage++; showPage(currentPage); };
+          paginationContainer.appendChild(nextBtn);
+      }
+  }
+
+  function searchProjects() {
+      let searchValue = searchInput.value.toLowerCase();
+      filteredCards = flipCards.filter(card => {
+          let title = card.querySelector(".title").innerText.toLowerCase();
+          return title.includes(searchValue);
+      });
+
+      currentPage = 1; // Reset to first page after filtering
+      showPage(currentPage);
+  }
+
+  searchInput.addEventListener("input", searchProjects);
+  showPage(currentPage); // Initialize with first page
+});
+
+
+
+
+
+
  /*=====sticky slections active line=====*/
  document.addEventListener('DOMContentLoaded', (event) => {
   let sections = document.querySelectorAll('section');
@@ -208,20 +294,17 @@ document.getElementById("colorPicker").addEventListener('input', function(event)
 
 /*=====swiper reveal=====*/
 ScrollReveal({
-  reset: true,
+  reset: false,
   distance: '80px',
   duration: 2000,
   delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
-ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom'});
-ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left'});
-ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right'});
+ScrollReveal().reveal('.header, .home-content, .heading', { origin: 'top'});
+ScrollReveal().reveal('.home-img img, .services-container, .portfolio-container, .row, .form-container, .view-more, .detail_bx,', { origin: 'bottom'});
+ScrollReveal().reveal('.logo, .home-content h1, .about_image_container, .about-img img', { origin: 'left'});
+ScrollReveal().reveal('.home-content h3, .contact_info, .home-content p, .search-container, .about-content', { origin: 'right'});
 
-
-
-  
 
  
   
