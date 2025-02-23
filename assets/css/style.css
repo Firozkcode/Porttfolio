@@ -473,7 +473,9 @@ section{
  .heading{
     font-size: 4.5rem;
     text-align: center;
+    /* margin-bottom: 50px; */
  }
+
 
  .about-content{
    width: 50%;
@@ -611,6 +613,7 @@ section{
    transform: rotateX(180deg);
    position: relative;
    left: 0px;
+   /* top: 250px; */
    /* transform: rotateZ(180deg); */
    z-index: -1;
 }
@@ -778,7 +781,7 @@ label:hover{
  }
 
  .services-container .services-box:hover{
-    box-shadow: 0 .1rem 2rem var(--shadow-color);
+    box-shadow: 0 .1rem 2rem var(--main-color);
     transform: scale(1.02);
  }
 
@@ -925,7 +928,7 @@ label:hover{
  .services-box p{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
-    transform: translateZ(20px);
+    transform: translateZ(25px);
  }
 
  .portfolio{
@@ -943,6 +946,46 @@ label:hover{
     gap: 3rem;
  }
 
+ .search-container{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   position: relative;
+   /* background: red; */
+   margin: 20px;
+   padding: 10px;
+ }
+
+ .search-container input{
+   padding: 0.5rem 1rem;
+   border: 2px solid var(--main-color);
+   background-color: transparent;
+   width: 300px;
+   color: var(--main-color);
+   font-size: 18px;
+   border-radius: 5px;
+ }
+
+ .search-container button{ 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+   font-size: 18px;
+   position: absolute;
+   /* right: 39px; */
+   border-radius: 0 5px 5px 0;
+   background-color: var(--main-color);
+   color: var(--text-color);
+ }
+
+ .not_found{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+ }
+
  .flip-card {
    background-color: transparent;
    /* width: 290px; */
@@ -950,6 +993,7 @@ label:hover{
    border-radius: 20px;
    perspective: 1000px;
    font-family: sans-serif;
+   transform-style: preserve-3d;
  }
  
  .title {
@@ -961,9 +1005,10 @@ label:hover{
 
  .flip-card-back .title{
    font-size: 2.5rem;
+   transform: translateZ(35px);
  }
 
- .hover{
+ .flip-card-front .hover{
    border: 2px solid var(--main-color);
    width: 100px;
    font-size: 14px;
@@ -971,6 +1016,7 @@ label:hover{
    border-radius: 5px;
    background: var(--main-color);
    color: var(--white-color);
+   transform: translateZ(35px);
  }
  
  .flip-card-inner {
@@ -1005,11 +1051,13 @@ label:hover{
    backface-visibility: hidden;
    border: 3px solid var(--main-color);
    border-radius: 20px;
+   transform-style: preserve-3d;
  }
  
  .flip-card-front {
    background: linear-gradient(120deg, transparent 60%, transparent 88%,
       transparent 40%, var(--main-color) 48%);
+      background-color: var(--bg-color);
    color: var(--main-color);
    box-shadow: 15px 10px 25px var(--shadow-color);
  }
@@ -1041,6 +1089,7 @@ label:hover{
    height: 60%;
    width: 100%;
    z-index: -1;
+   transform: translateZ(25px);
  }
 
  .flip-card-back a{
@@ -1053,6 +1102,8 @@ label:hover{
    color: var(--main-color);
    background: var(--white-color);
    border: 2px solid var(--main-color);
+   transform: translateZ(35px);
+   transition: .3s ease;
  }
 
  .flip-card-back a:hover{
@@ -1060,9 +1111,71 @@ label:hover{
    color: var(--white-color);
  }
 
+ .flip-card-front .title{
+   transform: translateZ(35px);
+ }
+
  .flip-card-back p{
    font-size: 14px;
+   transform: translateZ(35px);
+   /* mix-blend-mode: difference;/ */
  }
+ 
+ .portfolio #view-more{
+   color: var(--main-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 14px;
+   width: 100px;
+   padding: 8px;
+   border-radius: 10px;
+   border: 2px solid var(--main-color);
+   background: var(--bg-color);
+   box-shadow: 5px 5px 10px var(--shadow-color);
+   margin: auto;
+   margin-top: 50px;
+   transition: .2s ease;
+}
+
+.portfolio #view-more:hover{
+   background: var(--main-color);
+   color: var(--text-color);
+}
+
+.pagination {
+   text-align: center;
+   margin-top: 50px;
+   background-color: transparent;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.pagination button {
+   margin: 5px;
+   padding: 4px 12px;
+   border: none;
+   font-size: 12px;
+   cursor: pointer;
+   background-color: var(--bg-color);
+   color: var(--main-color);
+   border: 2px solid var(--main-color);
+   border-radius: 5px;
+   transition: 0.3s;
+}
+
+.pagination button:hover {
+   background-color: var(--main-color);
+   color: white;
+}
+
+.pagination button.active {
+   background-color: var(--main-color);
+   color: white;
+   font-weight: bold;
+}
+
 
  .heading {
    position: relative;
@@ -1225,10 +1338,10 @@ label:hover{
    box-shadow: 5px 10px 25px var(--shadow-color);
    transition: .2s ease;
    border-left: 5px solid var(--main-color);
-   animation: SlidingTop 1s;
+   /* animation: SlidingTop 1s; */
 }
 
-#address{
+/* #address{
    animation: SlidingLeft 1s;
 }
 
@@ -1238,10 +1351,11 @@ label:hover{
 
 #call_info{
    animation: SlidingRight 1s;
-}
+} */
 
 .contact .contact_details .detail_bx:hover{
    scale: 1.03;
+   box-shadow: 5px 10px 25px var(--main-color);
 }
 
 .contact .contact_details .detail_bx ion-icon{
@@ -1498,6 +1612,9 @@ label:hover{
    background: var(--main-color);
    color: var(--white-color);
  }
+
+
+ /* ---------footer-------- */
 
  .footer{
     display: flex;
@@ -1882,7 +1999,7 @@ label:hover{
       /* padding-bottom: 0; */
       border-bottom-right-radius: 20px;
       border-bottom-left-radius: 20px;
-      border-bottom: 5px solid var(--bg-color);
+      border-bottom: 5px solid var(--main-color);
       /* border-left: 5px solid var(--bg-color); */
       /* border-right: 5px solid var(--bg-color); */
       /* background: var(--bg-color); */
@@ -2089,6 +2206,15 @@ label:hover{
 
    .about_image_container{
       scale: .6;
+   }
+
+   .search-container{
+      margin: 20px 0;
+      padding: 0;
+   }
+
+   .search-container input{
+      width: 100%;
    }
 
    .contact .form-container{
