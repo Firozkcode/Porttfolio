@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firoz Khan | Projects</title>
+    <link rel="icon" href="assets/img/fk_logo.jpg", type="image/jpg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-----swiper css----->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    
+    <!---custom icons-->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--========== Ionicons =============-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+     <link rel="stylesheet" href="assets/css/bootstrap-made.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+</head>
+<body class="dark-mode">
+
+  <!-- header design -->
+
+  <header class="header">
+    <a href="#" class="logo">Portfolio
+        <img src="assets/img/fk_logo.jpg" alt="">
+    </a>
+
+    <nav class="navbar">
+        <hr id="indicator">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Service</a>
+        <a href="#portfolio" class="active">Projects</a>
+        <a href="index.html#testimonials">Testimonial</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+
+  
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+       
+
+
+    <div class="color-switcher">
+        <div class="switcher-btn">
+            <i class="fas fa-cog"></i>
+        </div>
+
+        <h3>select color</h3>
+        <div class="theme-buttons-container">
+            <span class="theme-buttons" data-color="#754ef9" style="background: #754ef9;"></span>
+            <span class="theme-buttons" data-color="#17ff3e" style="background: #00e426;"></span>
+            <span class="theme-buttons" data-color="#ffc312" style="background: #ffc312;"></span>
+            <span class="theme-buttons" data-color="#06ff93" style="background: #06ff93;"></span>
+            <!-- <span class="theme-buttons" data-color="#ff1900" style="background: #ff1900;"></span> -->
+            <!-- <span class="theme-buttons" data-color="#e84393" style="background: #e84393;"></span> -->
+            <span class="theme-buttons" data-color="#ff4757" style="background: #ff4757;"></span>
+            <!-- <span class="theme-buttons" data-color="#ffc312" style="background: #ffc312;"></span> -->
+            <span class="theme-buttons" data-color="#17c0eb" style="background: #17c0eb;"></span>
+        </div>
+         <!-- Add a color picker input -->
+         <h3>Or Pick a Custom Color:</h3>
+         <div id="colorContainer">
+             <input type="color" id="colorPicker" value="#000000">
+             <p id="colorCode">Color Code: #000000</p>
+         </div>
+    </div>
+
+</header>
+
+
+<!--portfolio section design-->
+
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">My <span>Projects</span></h2>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search project...">
+        <button><ion-icon name="search-outline"></ion-icon></button>
+    </div>
+    <div class="portfolio-container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">SnapStudio</p>
+                    <img src="assets/img/portfolio/Snapstudio.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/Snapstudio.png');">
+                    <p class="title">Details</p>
+                    <p>Snap Studio, a user-friendly photography website with advanced editing tools, a competitive pricing chart, and a comprehensive feedback system. Features include image zoom, downloads, and client information for enhanced user experience.</p>
+                    <a href="https://snapstudio9711.lovestoblog.com/index.php" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Chat Application</p>
+                    <img src="assets/img/portfolio/Chat_App_img.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/Chat_App_img.png');">
+                    <p class="title">Details</p>
+                    <p>Introducing a versatile Chat Application with real-time messaging, group chats, and secure media sharing, designed for a seamless user experience.</p>
+                    <a href="https://chatapp9711.kesug.com/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Ai chatbot</p>
+                    <img src="assets/img/portfolio/Ai chatbot.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/Ai chatbot.png');">
+                    <p class="title">Details</p>
+                    <p>An intelligent chatbot that answers all your questions, assists developers with code, and analyzes images for content insights. Effortlessly handles queries and image analysis, enhancing productivity and interaction.</p>
+                    <a href="https://firoz-ai.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Profile Card</p>
+                    <img src="assets/img/portfolio/profile_card.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/profile_card.png');">
+                    <p class="title">Details</p>
+                    <p>The Profile Card is a modern and stylish representation of who you are, offering a snapshot of your key details in a visually appealing format.</p>
+                    <a href="https://firozprofilek.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Shape Generator</p>
+                    <img src="assets/img/portfolio/Shape generator.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/Shape generator.png');">
+                    <p class="title">Details</p>
+                    <p>Create any type of shapes manually.</p>
+                    <a href="https://shape-generator-by-fk.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Responsive Dashboard</p>
+                    <img src="assets/img/portfolio/dashboard.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/dashboard.png');">
+                    <p class="title">Details</p>
+                    <p>This dashboard offers a clean, intuitive interface that tracks course progress, statistics, and weekly tasks, ensuring efficient learning and organization. The design prioritizes user experience with easy navigation and clear visual data representation.</p>
+                    <a href="https://firozk-dashboard.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Login/Signup form</p>
+                    <img src="assets/img/portfolio/signup-project.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/signup-project.png');">
+                    <p class="title">Details</p>
+                    <p>Your gateway to a personalized and protected experience. Sign in to access exclusive features, manage your account, and enjoy a seamless interaction with our platform.</p>
+                    <a href="https://fk-forms.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Email and Password Validation</p>
+                    <img src="assets/img/portfolio/password and email validation.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/password and email validation.png');">
+                    <p class="title">Details</p>
+                    <p>Developed a real-time Email & Password Validation Form using HTML, CSS, and JavaScript. It verifies email formats and checks password strength based on essential security criteria. The interactive UI provides instant feedback, ensuring a smooth user experience while promoting strong credentials.</p>
+                    <a href="https://signup-validation-by-fk.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">To Do List</p>
+                    <img src="assets/img/portfolio/to do list.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/to do list.png');">
+                    <p class="title">Details</p>
+                    <p>Created this interactive To-Do List using HTML, CSS, and JavaScript with a sleek neumorphic UI. It allows users to add, complete, and delete tasks effortlessly, with a smooth strikethrough effect for completed items. A simple yet stylish productivity tool!</p>
+                    <a href="https://todolistbyfiroz.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Weather App</p>
+                    <img src="assets/img/portfolio/weather app.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/weather app.png');">
+                    <p class="title">Details</p>
+                    <p>A real-time Weather App using HTML, CSS, JavaScript, and the OpenWeather API. It allows users to search any location or fetch the current location's weather, displaying temperature, humidity, wind speed, and conditions with a sleek UI.</p>
+                    <a href="https://firoz-weather-app.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Memory Game</p>
+                    <img src="assets/img/portfolio/memory game.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/memory game.png');">
+                    <p class="title">Details</p>
+                    <p>Test your memory with this engaging 3D card-matching game! Flip the cards to reveal pairs of iconic programming and design logos. Watch them flip in stunning 3D as you search for matches. Can you find all the pairs before time runs out?</p>
+                    <a href="https://memory-game-by-firoz.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Realistic Calculator</p>
+                    <img src="assets/img/portfolio/realistic Calculator.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/realistic Calculator.png');">
+                    <p class="title">Details</p>
+                    <p>Experience the thrill of realistic 3D card-flipping with every keypress on this sleek calculator. Buttons spring to life with immersive animations as you calculate. Enjoy a visually stunning and satisfying mathematical journey.</p>
+                    <a href="https://firozk-calculator.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">CRUD Application</p>
+                    <img src="assets/img/portfolio/crud app.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/crud app.png');">
+                    <p class="title">Details</p>
+                    <p>This simple CRUD app allows users to manage a list of users. It provides the ability to add new users, delete existing users, and edit the details of existing users. The interface is straightforward, displaying user data in a table with "Edit" and "Delete" actions for each entry. The app offers basic user management functionality.</p>
+                    <a href="https://user-crud23.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Analog Clock</p>
+                    <img src="assets/img/portfolio/analog clock.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/analog clock.png');">
+                    <p class="title">Details</p>
+                    <p>Developed a clean and minimalist analog clock interface. Accurate timekeeping is achieved through JavaScript's `Date` object. The design prioritizes simplicity and readability, offering a visually appealing time display.</p>
+                    <a href="https://fk-clock.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Coffee Site</p>
+                    <img src="assets/img/portfolio/coffee site.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/coffee site.png');">
+                    <p class="title">Details</p>
+                    <p>Clean, modern website design for a coffee company. Visually appealing imagery and intuitive navigation enhance the user experience. Features include online ordering and contact information. Built with html, CSS and JS.</p>
+                    <a href="https://coffee-site-fk.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Softech Site</p>
+                    <img src="assets/img/portfolio/softech site.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/softech site.png');">
+                    <p class="title">Details</p>
+                    <p>Clean, modern website design for an electrical company. Visually appealing imagery and intuitive navigation enhance the user experience. Features include online product searching and contact information. Built with html, CSS and JS.</p>
+                    <a href="https://softechcontrolsolution.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Ping Pong Gamee</p>
+                    <img src="assets/img/portfolio/Ping Pong game.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/Ping Pong game.png');">
+                    <p class="title">Details</p>
+                    <p>A simple yet engaging ping pong game built with HTML, CSS, JavaScript. Players can compete against another player or the computer. Features include pause functionality and adjustable difficulty.</p>
+                    <a href="https://ping-pong-fk.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Snake Gamee</p>
+                    <img src="assets/img/portfolio/Snake game.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/Snake game.png');">
+                    <p class="title">Details</p>
+                    <p>A classic Snake game recreation built from scratch. The player controls a snake to eat food and grow, avoiding collisions with its own body and the walls. Includes scoring and high score tracking. A fun and challenging test of reflexes and strategy.</p>
+                    <a href="https://snake-game-fk.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Playable Piano</p>
+                    <img src="assets/img/portfolio/piano.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/piano.png');">
+                    <p class="title">Details</p>
+                    <p>Developed a playable on-screen piano using HTML, CSS, and JavaScript. Features include volume control and an option to show/hide keyboard letter mappings for easy use. A fun and functional project demonstrating interactive web development skills.</p>
+                    <a href="https://piano-by-fk.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Image Slider</p>
+                    <img src="assets/img/portfolio/Image Slider.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/Image Slider.png');">
+                    <p class="title">Details</p>
+                    <p>Developed a Page Slider using HTML, CSS, and JavaScript. Features include Move to next page and previous page through animations. A functional project demonstrating interactive web development skills.</p>
+                    <a href="https://image-slider-fk.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">QR code Generator</p>
+                    <img src="assets/img/portfolio/qr-generator.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/qr-generator.png');">
+                    <p class="title">Details</p>
+                    <p>Generate Your personal QR code with any deta.</p>
+                    <a href="https://firoz-qr.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Contact Me Form</p>
+                    <img src="assets/img/portfolio/contact form.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/contact form.png');">
+                    <p class="title">Details</p>
+                    <p>Developed a contact from to Connect others in just one step.</p>
+                    <a href="https://contactfirozk.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Todo App</p>
+                    <img src="assets/img/portfolio/Todo App.png" alt="Front Side Image" id="productImage" loading="lazy">
+                    <p class="hover">Hover Me</p>
+                </div>
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/Todo App.png');">
+                    <p class="title">Details</p>
+                    <p>Developed a contact from to Connect others in just one step.</p>
+                    <a href="https://todo-app-548.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</section>
+
+     <!----Footer design---->
+
+ <footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2024 By <a href="https://firozfk.great-site.net/">Firoz Khan</a> | All Rights Reserved</p>
+    </div>
+
+    <!-- <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-circle' ></i></a>
+    </div> -->
+</footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="assets/js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="-OQoTGcIXAX-SFcwt8lMQ";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+
+
+</body>
+</html>
