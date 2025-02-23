@@ -7,6 +7,7 @@
     <link rel="icon" href="assets/img/fk_logo.jpg", type="image/jpg">
     <link rel="stylesheet" href="assets/css/style.css">
     
+    
     <!-----swiper css----->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
@@ -154,7 +155,7 @@
             <img src="assets/img/firoz1.png" alt="">
             <span class="shadow"></span>
         </div>
-       </div>
+    </div>
     <div class="about-content">
         <h2 class="heading">About<span> Me</span></h2>
         <input type="checkbox" id="check">
@@ -181,12 +182,13 @@
         </div>
         
     </div>
+    
 </section>
 
 <!---service section design -->
 
 <section class="services" id="services">
-    <h2 class="heading">My <span>services</span></h2>
+    <h2 class="heading white-heading">My <span>services</span></h2>
 
     <div class="services-container">
         <div class="services-box">
@@ -224,10 +226,15 @@
     </div>
 </section>
 
+<!-- Skills Section -->
+ 
+
+<!-- end of Skill section -->
+
 <!--portfolio section design-->
 
 <section class="portfolio" id="portfolio">
-    <h2 class="heading">Latest <span>Projects</span></h2>
+    <h2 class="heading white-heading">Latest <span>Projects</span></h2>
     <div class="portfolio-container">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -292,14 +299,14 @@
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <p class="title">Login/Signup form</p>
-                    <img src="assets/img/portfolio/signup-project.png" alt="Front Side Image" id="productImage">
+                    <p class="title">Shape Generator</p>
+                    <img src="assets/img/portfolio/Shape generator.png" alt="Front Side Image" id="productImage" loading="lazy">
                     <p class="hover">Hover Me</p>
                 </div>
-                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/signup-project.png');">
+                <div class="flip-card-back" style="background-image: url('assets/img/portfolio/Shape generator.png');">
                     <p class="title">Details</p>
-                    <p>Your gateway to a personalized and protected experience. Sign in to access exclusive features, manage your account, and enjoy a seamless interaction with our platform.</p>
-                    <a href="https://fk-forms.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
+                    <p>Create any type of shapes manually.</p>
+                    <a href="https://shape-generator-by-fk.netlify.app/" title="Live Demo"><ion-icon name="eye"></ion-icon></a>
                 </div>
             </div>
         </div>
@@ -318,13 +325,15 @@
                 </div>
             </div>
         </div>
+        
     </div>
+    <a href="portfolio.html" class="view-more" id="view-more">view more</a>
 </section>
 
 <!--Testimonial design------>
 <section class="testimonials" id="testimonials">
     <div class="heading text-center">
-        <h2 class="heading">What's
+        <h2 class="heading white-heading">What's
             <span>Peoples</span>
             Says?</h2>
 
@@ -345,9 +354,9 @@
                     <div class="carousel-inner">
                         <!-- Item-1 -->
                         <div class="carousel-item active text-center">
-                            <img src="assets/img/testimonials/user-1.png" alt="" class="center-block team">
-                            <h3>Alamin Musa</h3>
-                            <h4>Front End Developer</h4>
+                            <img src="assets/img/testimonials/profile-1.jpg" alt="" class="center-block team">
+                            <h3>Nikhil Thakur</h3>
+                            <h4>.net Developer</h4>
                             <div class="rating">
                                 <ion-icon name="star-half-outline"></ion-icon>
                                 <ion-icon name="star-half-outline"></ion-icon>
@@ -355,15 +364,13 @@
                                 <ion-icon name="star-half-outline"></ion-icon>
                                 <ion-icon name="star-half-outline"></ion-icon>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                                porttitordapibus dictum.<br>
-                                Fusce faucibus ligula scelerisque, eleifend turpis in</p>
+                            <p>I absolutely loved the 3D service card designs! The way they subtly elevate and interact on hover adds a dynamic and engaging touch to the user experience. Combined with the smooth animations and responsiveness, your portfolio truly stands out. Keep up the fantastic work!</p>
                         </div>
                         <!-- Item-2 -->
                         <div class="carousel-item text-center">
-                            <img src="assets/img/testimonials/user-2.png" alt="" class="center-block team">
-                            <h3>Alamin Musa</h3>
-                            <h4>Front End Developer</h4>
+                            <img src="assets/img/testimonials/profile-2.jpg" alt="" class="center-block team">
+                            <h3>Mini Bhati</h3>
+                            <h4>Web Developer</h4>
                             <div class="rating">
                                 <ion-icon name="star-half-outline"></ion-icon>
                                 <ion-icon name="star-half-outline"></ion-icon>
@@ -371,15 +378,13 @@
                                 <ion-icon name="star-half-outline"></ion-icon>
                                 <ion-icon name="star-half-outline"></ion-icon>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                                porttitordapibus dictum.<br>
-                                Fusce faucibus ligula scelerisque, eleifend turpis in</p>
+                            <p>Your portfolio website is truly impressive! The smooth animations, from the elegant typing effects to the subtle shadow transitions, create a visually engaging experience. The attention to detail in the UI/UX is remarkable, and the responsiveness ensures a seamless experience across all devices.</p>
                         </div>
                         <!-- Item-3 -->
                         <div class="carousel-item text-center">
-                            <img src="assets/img/testimonials/user-3.png" alt="" class="center-block team">
-                            <h3>Alamin Musa</h3>
-                            <h4>Front End Developer</h4>
+                            <img src="assets/img/testimonials/profile-3.jpg" alt="" class="center-block team">
+                            <h3>Alok Mishra</h3>
+                            <h4>Data Analyst</h4>
                             <div class="rating">
                                 <ion-icon name="star-half-outline"></ion-icon>
                                 <ion-icon name="star-half-outline"></ion-icon>
@@ -387,17 +392,15 @@
                                 <ion-icon name="star-half-outline"></ion-icon>
                                 <ion-icon name="star-half-outline"></ion-icon>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                                porttitordapibus dictum.<br>
-                                Fusce faucibus ligula scelerisque, eleifend turpis in</p>
+                            <p>The 3D flipping animation on hover is just stunning! It adds an interactive and modern touch, making the project showcase both engaging and visually appealing. Smooth transitions and a seamless experience—absolutely impressive!</p>
                         </div>
 
             
 
                      <!-- Item-4 -->
                      <div class="carousel-item text-center">
-                        <img src="assets/img/testimonials/user-4.jpg" alt="" class="center-block team">
-                        <h3>Alamin Musa</h3>
+                        <img src="assets/img/testimonials/profile-4.jpg" alt="" class="center-block team">
+                        <h3>Daksh</h3>
                         <h4>Front End Developer</h4>
                         <div class="rating">
                             <ion-icon name="star-half-outline"></ion-icon>
@@ -406,17 +409,15 @@
                             <ion-icon name="star-half-outline"></ion-icon>
                             <ion-icon name="star-half-outline"></ion-icon>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                            porttitordapibus dictum.<br>
-                            Fusce faucibus ligula scelerisque, eleifend turpis in</p>
+                        <p>I tried the contact form to reach out to the developer, and I was amazed by the quick response! The form is user-friendly, well-designed, and works flawlessly. A truly professional experience!</p>
                     </div>
 
              
 
                  <!-- Item-5 -->
                  <div class="carousel-item text-center">
-                    <img src="assets/img/testimonials/user-1.png" alt="" class="center-block team">
-                    <h3>Alamin Musa</h3>
+                    <img src="assets/img/testimonials/profile-5.jpg" alt="" class="center-block team">
+                    <h3>Chetan Rawal</h3>
                     <h4>Front End Developer</h4>
                     <div class="rating">
                         <ion-icon name="star-half-outline"></ion-icon>
@@ -425,9 +426,7 @@
                         <ion-icon name="star-half-outline"></ion-icon>
                         <ion-icon name="star-half-outline"></ion-icon>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                        porttitordapibus dictum.<br>
-                        Fusce faucibus ligula scelerisque, eleifend turpis in</p>
+                    <p>I'm truly impressed with the projects developed by you! I even explored them myself, and they are absolutely awesome. The creativity, functionality, and smooth experience make them stand out. Keep it up the great work! 🚀🔥👏</p>
                 </div>
 
             </div>
@@ -455,7 +454,7 @@
 <!-----Contact section----->
 
 <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me!</span></h2>
+    <h2 class="heading white-heading">Contact <span>Me!</span></h2>
 
     <div class="contact_info">
         <div class="map">
@@ -527,7 +526,7 @@
 
  <footer class="footer">
     <div class="footer-text">
-        <p>Copyright &copy; 2024 By <a href="https://firozfk.great-site.net/">Firoz Khan</a> | All Rights Reserved</p>
+        <p>Copyright &copy; 2025 By <a href="https://firozfk.great-site.net/">Firoz Khan</a> | All Rights Reserved</p>
     </div>
 
     <!-- <div class="footer-iconTop">
@@ -540,6 +539,8 @@
 <!-- <div id="preloader">
 <div class="line"></div>
 </div> -->
+
+<script src="https://unpkg.com/scrollreveal"></script>
 
 <script src="assets/js/script.js"></script>
 
