@@ -1,4 +1,4 @@
 User-agent: *
 Allow:
 
-Sitemap: https://m3mcommercialnoida.in/sitemap.xml
+Sitemap: https://firozkportfolio.netlify.app/sitemap.xml
